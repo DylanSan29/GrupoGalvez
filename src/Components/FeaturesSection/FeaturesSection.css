@@ -1,0 +1,137 @@
+/* Features Section Styles */
+.features {
+  padding: 4rem 5rem;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.features-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.features-subheading {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #7f8c8d;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+  width: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 5rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  flex: 1;
+  background: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-card h3 {
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+.testimonial-card p {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  color: #95a5a6;
+}
+
+/* Call-to-Action Section */
+.cta {
+  padding: 4rem 5rem;
+  background-color: #ff6200;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-subheading {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  font-size: 1.25rem;
+  background-color: #ffbb33;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff9c00;
+}

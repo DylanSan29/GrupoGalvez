@@ -1,0 +1,96 @@
+/* Overall Section Styling */
+.our-products {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .section-subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  /* Product Grid Layout */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  /* Individual Product Card */
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .product-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Call-to-Action Button */
+  .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 2.5rem;
+    }
+  
+    .section-subheading {
+      font-size: 1rem;
+    }
+  }
+  

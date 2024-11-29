@@ -1,0 +1,159 @@
+/* General Styling */
+.about-us {
+    padding: 4rem 5rem;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    color: #2c3e50;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Image Placeholder */
+  .image-placeholder {
+    margin-bottom: 2rem;
+  }
+  
+  .image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Intro Section */
+  .intro {
+    margin-bottom: 3rem;
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #e8f5e9;
+    border-left: 5px solid #27ae60;
+    border-radius: 8px;
+  }
+  
+  .mission-section p {
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  /* Vision Section */
+  .vision-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #e3f2fd;
+    border-left: 5px solid #2196f3;
+    border-radius: 8px;
+  }
+  
+  .vision-section p {
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  /* Values Section */
+  .values-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #fff3e0;
+    border-left: 5px solid #ff9800;
+    border-radius: 8px;
+  }
+  
+  .values-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .values-section li {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .values-section li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  /* Impact Section */
+  .impact-section {
+    margin: 3rem 0;
+  }
+  
+  .impact-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .stat {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .stat h3 {
+    font-size: 2.5rem;
+    color: #ff6200;
+  }
+  
+  .stat p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Team Section */
+  .team-section {
+    margin: 3rem 0;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
