@@ -1,58 +1,152 @@
+/* Estilos generales del footer */
 .footer {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 2rem 5rem;
-    margin-top: 2rem;
-  }
-  
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem 5rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a:hover {
+  color: #ffbb33;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.social-links a:hover {
+  color: #ffbb33;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  /* Ajustes para pantallas pequeñas como tabletas */
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    flex-direction: column; /* Cambiar de fila a columna */
+    align-items: center;
   }
-  
+
   .footer-section {
-    flex: 1;
+    margin-bottom: 1.5rem;
+    width: 100%; /* Asegura que cada sección ocupe todo el ancho */
   }
-  
+
   .footer-section h4 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem; /* Ajustar tamaño de los títulos */
   }
-  
+
   .footer-section p, .footer-section ul, .footer-section a {
-    font-size: 0.9rem;
-    color: #bbb;
-    text-decoration: none;
+    font-size: 0.85rem; /* Reducir tamaño de texto para pantallas más pequeñas */
   }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #ffbb33;
-  }
-  
+
   .social-links a {
-    margin-right: 1rem;
-    color: #bbb;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Aumentar el tamaño de los iconos de redes sociales */
+    margin-right: 1.5rem;
   }
-  
-  .social-links a:hover {
-    color: #ffbb33;
-  }
-  
+
   .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #bbb;
+    font-size: 0.9rem; /* Ajustar tamaño del texto de copyright */
   }
-  
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para pantallas de móviles */
+  .footer {
+    padding: 1.5rem; /* Reducir padding en móviles */
+  }
+
+  .footer-container {
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem; /* Ajustar tamaño de los títulos */
+  }
+
+  .footer-section p, .footer-section ul, .footer-section a {
+    font-size: 0.8rem; /* Ajustar tamaño del texto */
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+
+  .social-links a {
+    margin-right: 0.8rem; /* Reducir espacio entre íconos */
+    font-size: 1rem; /* Reducir tamaño de íconos de redes sociales */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para pantallas de teléfonos muy pequeños */
+  .footer-container {
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .footer-section {
+    width: 100%; /* Asegurar que las secciones ocupen todo el ancho */
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem; /* Reducir aún más el tamaño de texto */
+  }
+
+  .social-links a {
+    font-size: 1.2rem; /* Ajustar tamaño de los íconos para pantallas más pequeñas */
+    margin-right: 0.8rem;
+  }
+
+  .footer {
+    padding: 1rem; /* Reducir el padding */
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.2rem; /* Reducir espacio entre los ítems */
+  }
+}

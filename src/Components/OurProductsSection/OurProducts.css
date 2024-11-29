@@ -1,96 +1,179 @@
 /* Overall Section Styling */
 .our-products {
-    padding: 80px 20px;
-    background: #ffffff;
-    text-align: center;
-  }
-  
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  /* Ajustes para pantallas de tabletas */
   .section-heading {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 2.5rem;
   }
-  
+
   .section-subheading {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 50px;
+    font-size: 1rem;
   }
-  
-  /* Product Grid Layout */
+
   .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar a más pequeñas */
+    gap: 20px; /* Reducir el espacio entre productos */
   }
-  
-  /* Individual Product Card */
+
   .product-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    padding: 15px; /* Ajustar padding de la tarjeta */
   }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f0f0f0;
-  }
-  
-  .product-info {
-    padding: 20px;
-    text-align: left;
-  }
-  
+
   .product-name {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.3rem; /* Reducir el tamaño de los nombres de los productos */
   }
-  
+
   .product-description {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 20px;
+    font-size: 0.9rem; /* Reducir el tamaño de la descripción */
   }
-  
-  /* Call-to-Action Button */
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para pantallas de teléfonos pequeños */
+  .section-heading {
+    font-size: 2rem; /* Reducir tamaño de título */
+  }
+
+  .section-subheading {
+    font-size: 0.9rem; /* Reducir tamaño de subtítulo */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Una columna más pequeña */
+    gap: 15px; /* Reducir espacio entre los productos */
+  }
+
+  .product-card {
+    padding: 10px; /* Ajustar el padding de la tarjeta */
+  }
+
+  .product-name {
+    font-size: 1.2rem; /* Reducir aún más el tamaño del nombre */
+  }
+
+  .product-description {
+    font-size: 0.85rem; /* Reducir aún más el tamaño de la descripción */
+  }
+
   .cta-button {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    padding: 10px 18px; /* Ajustar el tamaño del botón */
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
   }
-  
-  .cta-button:hover {
-    background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para pantallas muy pequeñas (móviles) */
+  .section-heading {
+    font-size: 1.8rem; /* Ajustar aún más el tamaño de los títulos */
   }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .section-heading {
-      font-size: 2.5rem;
-    }
-  
-    .section-subheading {
-      font-size: 1rem;
-    }
+
+  .section-subheading {
+    font-size: 0.8rem; /* Ajustar aún más el tamaño del subtítulo */
   }
-  
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Solo una columna */
+    gap: 10px; /* Reducir espacio entre productos */
+  }
+
+  .product-card {
+    padding: 8px; /* Ajustar padding para móviles */
+  }
+
+  .product-name {
+    font-size: 1rem; /* Reducir el tamaño del nombre */
+  }
+
+  .product-description {
+    font-size: 0.8rem; /* Reducir aún más el tamaño de la descripción */
+  }
+
+  .cta-button {
+    padding: 8px 16px; /* Reducir tamaño del botón */
+    font-size: 0.8rem; /* Reducir tamaño de la fuente del botón */
+  }
+}

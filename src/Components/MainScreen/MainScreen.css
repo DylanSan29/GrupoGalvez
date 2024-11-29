@@ -35,10 +35,12 @@ img {
   background-color: #ff6200;
   padding: 5rem;
   color: white;
+  flex-wrap: wrap; /* Añadido para permitir que los elementos se acomoden en pantallas más pequeñas */
 }
 
 .hero-content {
   max-width: 50%;
+  padding-right: 2rem; /* Agregado para espaciar mejor los elementos */
 }
 
 .hero-heading {
@@ -182,6 +184,7 @@ img {
   font-size: 1rem;
   color: #777;
 }
+
 .benefits {
   background-color: #f9f9f9;
   padding: 40px 20px;
@@ -320,47 +323,91 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.faq-question {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #ff6200;
-  margin-bottom: 0.5rem;
+.faq-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.faq-answer {
+.faq-item p {
   font-size: 1rem;
   color: #555;
-  line-height: 1.6;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
 }
 
-.faq-item.active .faq-answer {
-  max-height: 100px;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 1024px) {
   .hero {
     flex-direction: column;
-    text-align: center;
+    padding: 2rem;
   }
 
   .hero-content {
     max-width: 100%;
+    text-align: center;
   }
 
-  .feature-cards,
-  .testimonial-cards,
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.25rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  .features {
+    padding: 3rem 2rem;
+  }
+
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .video-section {
+    padding: 3rem 2rem;
+  }
+
+  .testimonials {
+    padding: 3rem 2rem;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing {
+    padding: 3rem 2rem;
+  }
+
   .pricing-cards {
     flex-direction: column;
+    align-items: center;
   }
 
-  .feature-card,
-  .testimonial-card,
   .pricing-card {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .faq {
+    padding: 3rem 2rem;
+  }
+
+  .faq-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-item {
     flex-basis: 100%;
   }
 }
