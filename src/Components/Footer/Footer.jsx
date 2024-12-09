@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h4>Sobre Nosotros</h4>
+          <img src="src/images/papas2.jpg" alt="Imagen de la Empresa" className="footer-image" />
           <p>Estamos comprometidos a ofrecer los mejores productos y servicios a nuestros clientes. Con la confianza de miles de personas en todo el mundo.</p>
         </div>
         <div className="footer-section">

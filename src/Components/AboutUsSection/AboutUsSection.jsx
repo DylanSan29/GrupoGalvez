@@ -8,15 +8,26 @@ const AboutUsSection = () => {
       <div className="intro">
         <h2>Sobre Nosotros</h2>
         <p>
-          En <strong>Grupo Galvez</strong>, nos apasiona ofrecer soluciones transformadoras que empoderan a las empresas para alcanzar sus objetivos. Con un compromiso con la innovación y la excelencia, hemos sido un socio de confianza para más de 10,000 clientes satisfechos en todo el mundo.
+          <strong>Productora de papas Rancho Gálvez SPR DE RL</strong>
         </p>
       </div>
+      <div className="main-image">
+        <img
+          src="src/images/photoField.jpg"
+          alt="Imagen Principal"
+          className="full-width-image"
+        />
+      </div>
 
-      {/* Sección de Misión */}
       <div className="mission-section">
         <h2>Nuestra Misión</h2>
         <p>
-          Empoderar a las empresas mediante soluciones innovadoras, fomentando el éxito y el crecimiento en cada paso.
+          Produciendo papas de alta calidad, sostenibles y accesibles, mientras
+          fomentamos el desarrollo de nuestras comunidades rurales y protegemos
+          el medio ambiente para las generaciones futuras. Comprometidos a
+          satisfacer las necesidades del sector industrial, proporcionando
+          productos de alta calidad y personalizados para satisfacer las
+          demandas de nuestros clientes industriales.
         </p>
       </div>
 
@@ -24,7 +35,12 @@ const AboutUsSection = () => {
       <div className="vision-section">
         <h2>Nuestra Visión</h2>
         <p>
-          Ser el líder global en innovación y transformación empresarial, inspirando cambios en todas las industrias.
+          Ser la empresa líder en la producción de papas de alta calidad,
+          reconocida por nuestra innovación, eficiencia y compromiso con la
+          sostenibilidad, y ser una fuente de orgullo y prosperidad para
+          nuestros colaboradores, socios y comunidades, mientras satisfacemos
+          las necesidades del mercado industrial y contribuimos al desarrollo de
+          la industria alimentaria en la región.
         </p>
       </div>
 
@@ -63,19 +79,22 @@ const AboutUsSection = () => {
         <h2>Conoce al Equipo</h2>
         <div className="team-members">
           <div className="team-member">
-            <img src="https://via.placeholder.com/150" alt="Miembro del Equipo" />
-            <h3>Jane Doe</h3>
-            <p>CEO & Fundadora</p>
+            <img src="src/images/worker1.jpg" alt="Miembro del Equipo" />
           </div>
           <div className="team-member">
-            <img src="https://via.placeholder.com/150" alt="Miembro del Equipo" />
-            <h3>John Smith</h3>
-            <p>CTO</p>
+            <img src="src/images/worker2.jpg" alt="Miembro del Equipo" />
           </div>
           <div className="team-member">
-            <img src="https://via.placeholder.com/150" alt="Miembro del Equipo" />
-            <h3>Emily Davis</h3>
-            <p>Jefa de Marketing</p>
+            <img src="src/images/worker3.jpg" alt="Miembro del Equipo" />
+          </div>
+          <div className="team-member">
+            <img src="src/images/worker4.jpg" alt="Miembro del Equipo" />
+          </div>
+          <div className="team-member">
+            <img src="src/images/worker5.jpg" alt="Miembro del Equipo" />
+          </div>
+          <div className="team-member">
+            <img src="src/images/worker6.jpg" alt="Miembro del Equipo" />
           </div>
         </div>
       </div>

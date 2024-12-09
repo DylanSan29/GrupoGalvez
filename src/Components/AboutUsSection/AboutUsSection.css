@@ -20,6 +20,21 @@ p {
   color: #555;
 }
 
+/* Estilos para la imagen principal */
+.main-image {
+  width: 100%;
+  overflow: hidden;
+  padding: 0rem 0rem;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 20rem;
+  display: block; /* Ensures image doesn't have extra space below it */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+
 /* Image Placeholder */
 .image-placeholder {
   margin-bottom: 2rem;
