@@ -57,53 +57,6 @@
   line-height: 1.6;
 }
 
-/* Testimonials Section */
-.testimonials {
-  padding: 4rem 5rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.testimonials-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: #2c3e50;
-}
-
-.testimonial-cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.testimonial-card {
-  flex: 1;
-  background: #f4f4f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  text-align: center;
-}
-
-.testimonial-card h3 {
-  margin-top: 1.5rem;
-  color: #2c3e50;
-}
-
-.testimonial-card p {
-  font-size: 1.25rem;
-  color: #7f8c8d;
-  margin-bottom: 1rem;
-}
-
-.testimonial-role {
-  font-size: 1rem;
-  color: #95a5a6;
-}
-
-/* Call-to-Action Section */
 .cta {
   padding: 4rem 5rem;
   background-color: #ff6200;
@@ -115,11 +68,13 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .cta-subheading {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 .cta-button {

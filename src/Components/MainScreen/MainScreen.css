@@ -17,9 +17,11 @@ img {
   display: block;
 }
 
-.full-width-image {
+.full-width-image-GrupoGalvez {
   width: 100%;
   overflow: hidden;
+  height: 33rem;
+  display: block;
 }
 
 .full-width-image-element {
@@ -28,6 +30,8 @@ img {
   display: block;
 }
 
+
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -35,12 +39,12 @@ img {
   background-color: #ff6200;
   padding: 5rem;
   color: white;
-  flex-wrap: wrap; /* Añadido para permitir que los elementos se acomoden en pantallas más pequeñas */
+  flex-wrap: wrap; /* For responsiveness */
 }
 
 .hero-content {
   max-width: 50%;
-  padding-right: 2rem; /* Agregado para espaciar mejor los elementos */
+  padding-right: 2rem; /* Space between text and image */
 }
 
 .hero-heading {
@@ -52,6 +56,7 @@ img {
 .hero-subheading {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .cta-button {
@@ -69,6 +74,7 @@ img {
 }
 
 .hero-image {
+  flex: 1; /* Ensures the image adjusts to available space */
   padding-left: 15rem;
 }
 

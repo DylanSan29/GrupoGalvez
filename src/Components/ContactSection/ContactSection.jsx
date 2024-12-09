@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react';
-import './ContactSection.css';
+import React, { useEffect } from "react";
+import "./ContactSection.css";
 
 const ContactSection = () => {
   useEffect(() => {
-    const contactItems = document.querySelectorAll('.contact-item');
-    const onScroll = () => {
-      contactItems.forEach(item => {
-        if (item.getBoundingClientRect().top < window.innerHeight) {
-          item.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', onScroll);
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
+    const contactItems = document.querySelectorAll(".contact-item");
+    contactItems.forEach((item) => {
+      item.classList.add("visible");
+    });
   }, []);
 
   return (
@@ -23,7 +14,6 @@ const ContactSection = () => {
       <div className="contact-container">
         <h2 className="contact-heading">Contáctanos</h2>
 
-        {/* Sección de Redes Sociales */}
         <div className="contact-social-media">
           <h3 className="section-heading">Síguenos</h3>
           <div className="contact-items">
@@ -33,7 +23,13 @@ const ContactSection = () => {
               </div>
               <i className="fab fa-facebook"></i>
               <p className="contact-link">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
               </p>
             </div>
             <div className="contact-item social-card">
@@ -42,7 +38,13 @@ const ContactSection = () => {
               </div>
               <i className="fab fa-twitter"></i>
               <p className="contact-link">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
               </p>
             </div>
             <div className="contact-item social-card">
@@ -51,13 +53,18 @@ const ContactSection = () => {
               </div>
               <i className="fab fa-instagram"></i>
               <p className="contact-link">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
               </p>
             </div>
           </div>
         </div>
 
-        {/* Sección de Correo Electrónico */}
         <div className="contact-section">
           <h3 className="section-heading">Envíanos un Correo</h3>
           <div className="contact-items">
@@ -70,7 +77,6 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Sección de Teléfono */}
         <div className="contact-section">
           <h3 className="section-heading">Llámanos</h3>
           <div className="contact-items">
@@ -83,20 +89,24 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Sección de Ubicación */}
         <div className="contact-section">
           <h3 className="section-heading">Nuestra Ubicación</h3>
           <div className="contact-items">
             <div className="contact-item">
               <i className="fas fa-map-marker-alt"></i>
               <p className="contact-link">
-                <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">123 Calle Negocios, Ciudad, País</a>
+                <a
+                  href="https://www.google.com/maps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  123 Calle Negocios, Ciudad, País
+                </a>
               </p>
             </div>
           </div>
         </div>
 
-        {/* Indicador de Desplazamiento */}
         <div className="scroll-down-indicator">
           <i className="fas fa-chevron-down"></i>
         </div>

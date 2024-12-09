@@ -61,8 +61,10 @@
 .navbar.sticky {
   background-color: #d85a00; /* Color de fondo más oscuro al hacer scroll */
 }
+.navbar-toggle {
+  display: none;
+}
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

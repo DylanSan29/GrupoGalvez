@@ -1,23 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar la apertura/cierre del menú
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Alternar el estado del menú
+    setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <a href="/">Logo</a>
       </div>
-      {/* Botón hamburguesa */}
-      <button className="navbar-toggle" onClick={toggleMenu}>
-        ☰
-      </button>
-      <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}> {/* Condicionalmente agregar la clase 'active' */}
+      {isMobile && (
+        <button className="navbar-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+      )}
+      <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
         <li><a href="/">Inicio</a></li>
         <li><a href="/FeaturesSection">Características</a></li>
         <li><a href="/AboutUs">Sobre Nosotros</a></li>
@@ -25,7 +39,6 @@ const Navbar = () => {
         <li><a href="/Contact">Contacto</a></li>
       </ul>
       <div className="navbar-cta">
-        {/* Botón o contenido adicional */}
       </div>
     </nav>
   );

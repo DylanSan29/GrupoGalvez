@@ -57,6 +57,14 @@
   color: #bbb;
 }
 
+.footer-image {
+  width: 100%; /* Asegura que la imagen ocupe el ancho de su contenedor */
+  max-width: 150px; /* Limita el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 1rem; /* Añade espacio entre el texto y la imagen */
+  margin-bottom: 1rem; /* Añade espacio debajo de la imagen */
+}
+
 /* Estilos responsivos */
 @media (max-width: 1024px) {
   /* Ajustes para pantallas pequeñas como tabletas */
