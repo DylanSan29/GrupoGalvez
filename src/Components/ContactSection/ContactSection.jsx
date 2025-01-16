@@ -1,7 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactSection.css";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [formStatus, setFormStatus] = useState("");
+
   useEffect(() => {
     const contactItems = document.querySelectorAll(".contact-item");
     contactItems.forEach((item) => {
@@ -9,102 +17,75 @@ const ContactSection = () => {
     });
   }, []);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+
+    if (name && email && message) {
+      try {
+        setFormStatus("Enviando...");
+        setTimeout(() => {
+          setFormStatus("Mensaje enviado exitosamente.");
+        }, 2000);
+      } catch (error) {
+        setFormStatus("Hubo un error al enviar el mensaje. Intenta de nuevo.");
+      }
+    } else {
+      setFormStatus("Por favor, completa todos los campos.");
+    }
+  };
+
   return (
     <section className="contact">
       <div className="contact-container">
-        <h2 className="contact-heading">Contáctanos</h2>
-
-        <div className="contact-social-media">
-          <h3 className="section-heading">Síguenos</h3>
-          <div className="contact-items">
-            <div className="contact-item social-card">
-              <div className="contact-item-img">
-                <img src="facebook-image.jpg" alt="Facebook" />
-              </div>
-              <i className="fab fa-facebook"></i>
-              <p className="contact-link">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </p>
-            </div>
-            <div className="contact-item social-card">
-              <div className="contact-item-img">
-                <img src="twitter-image.jpg" alt="Twitter" />
-              </div>
-              <i className="fab fa-twitter"></i>
-              <p className="contact-link">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </a>
-              </p>
-            </div>
-            <div className="contact-item social-card">
-              <div className="contact-item-img">
-                <img src="instagram-image.jpg" alt="Instagram" />
-              </div>
-              <i className="fab fa-instagram"></i>
-              <p className="contact-link">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="contact-section">
           <h3 className="section-heading">Envíanos un Correo</h3>
-          <div className="contact-items">
-            <div className="contact-item">
-              <i className="fas fa-envelope"></i>
-              <p className="contact-link">
-                <a href="mailto:contact@company.com">contact@company.com</a>
-              </p>
+          <form onSubmit={handleSubmit} className="contact-form">
+            <div className="contact-form-group">
+              <label htmlFor="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
             </div>
-          </div>
-        </div>
-
-        <div className="contact-section">
-          <h3 className="section-heading">Llámanos</h3>
-          <div className="contact-items">
-            <div className="contact-item">
-              <i className="fas fa-phone"></i>
-              <p className="contact-link">
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
-              </p>
+            <div className="contact-form-group">
+              <label htmlFor="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </div>
-          </div>
-        </div>
-
-        <div className="contact-section">
-          <h3 className="section-heading">Nuestra Ubicación</h3>
-          <div className="contact-items">
-            <div className="contact-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <p className="contact-link">
-                <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  123 Calle Negocios, Ciudad, País
-                </a>
-              </p>
+            <div className="contact-form-group">
+              <label htmlFor="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
             </div>
-          </div>
+            <button type="submit" className="submit-button">
+              Enviar
+            </button>
+            {formStatus && <p className="form-status">{formStatus}</p>}
+          </form>
         </div>
 
         <div className="scroll-down-indicator">

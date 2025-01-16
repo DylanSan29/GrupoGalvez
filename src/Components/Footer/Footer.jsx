@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2024 Tu Empresa. Todos los Derechos Reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Papas Rancho Galvez. Todos los Derechos Reservados.</p>
       </div>
     </footer>
   );
