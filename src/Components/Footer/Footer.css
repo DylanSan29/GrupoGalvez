@@ -67,39 +67,37 @@
 
 /* Estilos responsivos */
 @media (max-width: 1024px) {
-  /* Ajustes para pantallas pequeñas como tabletas */
   .footer-container {
-    flex-direction: column; /* Cambiar de fila a columna */
+    flex-direction: column;
     align-items: center;
   }
 
   .footer-section {
     margin-bottom: 1.5rem;
-    width: 100%; /* Asegura que cada sección ocupe todo el ancho */
+    width: 100%;
   }
 
   .footer-section h4 {
-    font-size: 1.1rem; /* Ajustar tamaño de los títulos */
+    font-size: 1.1rem;
   }
 
   .footer-section p, .footer-section ul, .footer-section a {
-    font-size: 0.85rem; /* Reducir tamaño de texto para pantallas más pequeñas */
+    font-size: 0.85rem;
   }
 
   .social-links a {
-    font-size: 1.2rem; /* Aumentar el tamaño de los iconos de redes sociales */
+    font-size: 1.2rem;
     margin-right: 1.5rem;
   }
 
   .footer-bottom {
-    font-size: 0.9rem; /* Ajustar tamaño del texto de copyright */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
-  /* Ajustes para pantallas de móviles */
   .footer {
-    padding: 1.5rem; /* Reducir padding en móviles */
+    padding: 1.5rem;
   }
 
   .footer-container {
@@ -108,11 +106,11 @@
   }
 
   .footer-section h4 {
-    font-size: 1rem; /* Ajustar tamaño de los títulos */
+    font-size: 1rem;
   }
 
   .footer-section p, .footer-section ul, .footer-section a {
-    font-size: 0.8rem; /* Ajustar tamaño del texto */
+    font-size: 0.8rem;
   }
 
   .footer-section ul li {
@@ -124,37 +122,36 @@
   }
 
   .social-links a {
-    margin-right: 0.8rem; /* Reducir espacio entre íconos */
-    font-size: 1rem; /* Reducir tamaño de íconos de redes sociales */
+    margin-right: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  /* Ajustes para pantallas de teléfonos muy pequeños */
   .footer-container {
     padding: 0;
     gap: 1rem;
   }
 
   .footer-section {
-    width: 100%; /* Asegurar que las secciones ocupen todo el ancho */
+    width: 100%;
     text-align: center;
   }
 
   .footer-bottom {
-    font-size: 0.75rem; /* Reducir aún más el tamaño de texto */
+    font-size: 0.75rem;
   }
 
   .social-links a {
-    font-size: 1.2rem; /* Ajustar tamaño de los íconos para pantallas más pequeñas */
+    font-size: 1.2rem;
     margin-right: 0.8rem;
   }
 
   .footer {
-    padding: 1rem; /* Reducir el padding */
+    padding: 1rem;
   }
 
   .footer-section ul li {
-    margin-bottom: 0.2rem; /* Reducir espacio entre los ítems */
+    margin-bottom: 0.2rem;
   }
 }
